@@ -18,7 +18,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: #c2b07f;
-      padding: 1rem 2rem;
+      padding: 2rem 2rem;
     }
 
     header h1 {
@@ -47,8 +47,8 @@
       background-color: white;
     }
     .about img {
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
       object-fit: cover;
       background-color: #e0e0e0;
     }
@@ -85,12 +85,26 @@
       background-color: #d0d0d0;
     }
 
- /* Contact form */
+
+ /* quote  form */
     .quote {
+     background-color: white;
       padding: 4rem 2rem;
+      text-align: center; /* center header and content */
       display: flex;
+      flex-direction: column;
+      align-items: center; /* center form horizontally */
       justify-content: center;
     }
+    .quote h2 {
+      width: 100vw; /* full viewport width */
+      background-color: #c2b07f; /* tan/golden color */
+      padding: 1rem 0; /* add vertical padding */
+      margin: 0 -2rem 2rem; /* negative horizontal margin to counter the parent's padding */
+      text-align: center; /* center the text */
+      box-sizing: border-box;
+    }
+
     form {
       background-color: white;
       padding: 2rem;
@@ -115,6 +129,24 @@
       cursor: pointer;
       border-radius: 4px;
     }
+
+/* location */ 
+    .location {
+
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: #e0e0e0;
+
+    }
+/*  contact */
+   .contact {
+      
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: white ;
+    }
+
+
 
     footer {
       background-color: #c2b07f;
@@ -152,8 +184,8 @@
   <nav id="navMenu" role="navigation" aria-label="Main navigation">
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#location">Location</a>
     <a href="#quote">Quote</a>
+    <a href="#location">Location</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -161,7 +193,7 @@
 <main>
   <!-- About Section -->
   <section id="about" class="about">
-    <img src="https://via.placeholder.com/300" alt="About Image">
+    <img src="lawn.jpg" alt="About Image">
     <div class="about-text">
       <h2>About Us</h2>
       <h3>Subheading</h3>
@@ -209,18 +241,12 @@
     </div>
   </section>
 
-  <!-- Location Section -->
-  <section id="location" class="location">
-    <h2>Service Area</h2>
-    <p>Based in McEwen, TN — proudly serving Waverly and surrounding communities in Humphreys County.</p>
-    <p>Hours: Mon-Sat: 8am - 6pm</p>
-    <p>Phone: <a href="tel:+19315551234">(931) 555-1234</a></p>
-  </section>
+  
 
   <!-- Quote Section -->
-  <h2>Request a Quote</h2>
+  
   <section id="quote" class="quote">
-    
+    <h2>Request a Quote</h2>
     <form id="quoteForm">
       <input type="text" id="name" name="name" placeholder="Name" required>
       <input type="email" id="email" name="email" placeholder="Email" required>
@@ -241,8 +267,17 @@
     </form>
   </section>
 
+
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <h2>Service Area</h2>
+    <p>Based in McEwen, TN — proudly serving Waverly and surrounding communities in Humphreys County.</p>
+    <p>Hours: Mon-Sat: 8am - 6pm</p>
+    <p>Phone: <a href="tel:+19315551234">(931) 555-1234</a></p>
+  </section>
+
   <!-- Contact Section -->
-  <section id="contact" >
+  <section id="contact" class="contact" >
     <h2>Contact Us</h2>
     <p>Phone: <a href="tel:+19315551234">(931) 555-1234</a></p>
     <p>Email: <a href="mailto:gageparkerlawns@example.com">gageparkerlawns@example.com</a></p>
