@@ -360,7 +360,7 @@ footer {
   const form = document.getElementById('quoteForm');
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    emailjs.sendForm('service_en815mm','template_18dp1lq', this)
+    emailjs.sendForm('service_en815mmb','template_18dp1lqb', this)
       .then(()=>{ alert('Quote request sent successfully!'); form.reset(); })
       .catch((err)=>{ console.error('FAILED...', err); alert('Failed to send.'); });
   });
@@ -368,5 +368,6 @@ footer {
 
 </body>
 </html>
+
 
 
